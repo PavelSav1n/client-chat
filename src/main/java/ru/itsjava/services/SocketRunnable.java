@@ -20,6 +20,5 @@ public class SocketRunnable implements Runnable {
         while (true) {
             System.out.println(serverReader.getMessage()); // и вызываем метод, читающий входящий поток строк
         }
-
     }
 }

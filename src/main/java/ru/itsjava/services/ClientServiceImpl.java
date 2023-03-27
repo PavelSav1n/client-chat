@@ -2,7 +2,6 @@ package ru.itsjava.services;
 
 import lombok.SneakyThrows;
 
-
 import java.io.PrintWriter;
 import java.net.Socket;
 
@@ -28,18 +27,31 @@ public class ClientServiceImpl implements ClientService {
             // Необходимо, чтобы клиент мог сначала писать сообщение в консоль, а потом отправлять его
             // Используем наш написанный MessageInputService с BufferedReader внутри для этой задачи:
             MessageInputService messageInputService = new MessageInputServiceImpl(System.in);
-            System.out.print("Введите сообщение: ");
-            String consoleMessage = messageInputService.getMessage();
 
-            // Пишем текст:
-            serverWriter.println(consoleMessage);
-            // Чтобы данные не буфферизовались, отправляем данные на сервер методом flush()
+            // Сначала авторизируем пользователя:
+            System.out.print("Введите логин: ");
+            String login = messageInputService.getMessage();
+            System.out.print("Введите пароль: ");
+            String password = messageInputService.getMessage();
+            // Отправляем данные на сервер:
+            // !autho!login:password
+            serverWriter.println("!autho!" + login + ":" + password);
             serverWriter.flush();
 
-
-
+            while (true) {
+                String consoleMessage = messageInputService.getMessage();
+                // Выход из чата:
+                if (consoleMessage.equals("exit")) {
+                    System.out.println("Выход из цикла...");
+                    break;
+                }
+                // Пишем текст:
+                serverWriter.println(consoleMessage);
+                // Чтобы данные не буфферизовались, отправляем данные на сервер методом flush()
+                serverWriter.flush();
+            }
+            System.out.println("Закрываем соединение...");
+            socket.close();
         }
-
-
     }
 }
