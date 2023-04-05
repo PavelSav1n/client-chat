@@ -17,8 +17,14 @@ public class SocketRunnable implements Runnable {
         // BufferedReader выделим в отдельный сервис
         MessageInputService serverReader = new MessageInputServiceImpl(socket.getInputStream());
 
+        String messageFromServer = null;
+
         while (true) {
-            System.out.println(serverReader.getMessage()); // и вызываем метод, читающий входящий поток строк
+            messageFromServer = serverReader.getMessage();
+            if (messageFromServer.equals("!exit!")) {
+                break;
+            }
+            System.out.println(messageFromServer); // и вызываем метод, читающий входящий поток строк
         }
     }
 }
