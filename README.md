@@ -4,6 +4,7 @@
 0. [About](https://github.com/PavelSav1n/client-chat/tree/master#0-about)
 1. [client-chat application details](https://github.com/PavelSav1n/client-chat/tree/master#1-client-chat-application-details)
 2. [Chat commands](https://github.com/PavelSav1n/client-chat/tree/master#2-chat-commands)
+3. [Other settings](https://github.com/PavelSav1n/client-chat#3-other-setings)
 
 
 
@@ -56,8 +57,8 @@ Here some comands, you can enter, once you've entered the chat:
 !exit -- exit chat to main menu
 ```
 
-## 3. Other
+## 3. Other settings
 
-`client-chat` application has different layers of logging, which you can change in [log4j.properties](https://github.com/PavelSav1n/server-chat/blob/master/src/main/resources/log4j.properties). Some basic information about how to setup Log4j is present in those properties via comments.
+`client-chat` application has different layers of logging, which you can change in [log4j.properties](https://github.com/PavelSav1n/client-chat/blob/master/src/main/resources/log4j.properties). Some basic information about how to setup Log4j is present in those properties via comments.
 
 :arrow_up_small:[Back to contents](https://github.com/PavelSav1n/client-chat/tree/master#contents)
