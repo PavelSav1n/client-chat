@@ -1,10 +1,10 @@
 # client-chat application
 
 ## contents
-0. [About](https://github.com/PavelSav1n/client-chat/tree/master#0-about)
-1. [client-chat application details](https://github.com/PavelSav1n/client-chat/tree/master#1-client-chat-application-details)
-2. [Chat commands](https://github.com/PavelSav1n/client-chat/tree/master#2-chat-commands)
-3. [Other settings](https://github.com/PavelSav1n/client-chat#3-other-setings)
+0. [About](https://github.com/PavelSav1n/client-chat#0-about)
+1. [client-chat application details](https://github.com/PavelSav1n/client-chat#1-client-chat-application-details)
+2. [Chat commands](https://github.com/PavelSav1n/client-chat#2-chat-commands)
+3. [Other settings](https://github.com/PavelSav1n/client-chat#3-other-settings)
 
 
 
