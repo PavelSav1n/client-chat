@@ -1,10 +1,10 @@
 # client-chat application
 
 ## contents
-0. [About](https://github.com/PavelSav1n/server-chat/blob/master/README.md#0-about)
-1. [SQL setup](https://github.com/PavelSav1n/server-chat/blob/master/README.md#1-sql-setup)
-2. [application.properties preparaion](https://github.com/PavelSav1n/server-chat/blob/master/README.md#2-applicationproperties-preparaion)
-3. [Other settings](https://github.com/PavelSav1n/server-chat/blob/master/README.md#3-other-settings)
+0. [About](https://github.com/PavelSav1n/client-chat/tree/master#0-about)
+1. [client-chat application details](https://github.com/PavelSav1n/client-chat/tree/master#1-client-chat-application-details)
+2. [Chat commands](https://github.com/PavelSav1n/client-chat/tree/master#2-chat-commands)
+
 
 
 ## 0. About
@@ -55,3 +55,4 @@ Here some comands, you can enter, once you've entered the chat:
 !save DESTINATION -- save chat all messages to file. Example: !save d:\message.txt
 !exit -- exit chat to main menu
 ```
+:arrow_up_small:[Back to contents](https://github.com/PavelSav1n/client-chat/tree/master#contents)
