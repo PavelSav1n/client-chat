@@ -55,4 +55,9 @@ Here some comands, you can enter, once you've entered the chat:
 !save DESTINATION -- save chat all messages to file. Example: !save d:\message.txt
 !exit -- exit chat to main menu
 ```
+
+## 3. Other
+
+`client-chat` application has different layers of logging, which you can change in [log4j.properties](https://github.com/PavelSav1n/server-chat/blob/master/src/main/resources/log4j.properties). Some basic information about how to setup Log4j is present in those properties via comments.
+
 :arrow_up_small:[Back to contents](https://github.com/PavelSav1n/client-chat/tree/master#contents)
